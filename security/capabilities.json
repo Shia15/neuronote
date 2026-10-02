@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "defaultPolicy": "deny",
+  "capabilities": [
+    {
+      "id": "SYSTEM_READ",
+      "domain": "system",
+      "operation": "read",
+      "risk": "low",
+      "confirmationRequired": false
+    },
+    {
+      "id": "NETWORK_READ",
+      "domain": "network",
+      "operation": "read",
+      "risk": "low",
+      "confirmationRequired": false
+    },
+    {
+      "id": "NETWORK_READ_NEIGHBORS",
+      "domain": "network",
+      "operation": "neighbors",
+      "risk": "low",
+      "confirmationRequired": false
+    },
+    {
+      "id": "FIREWALL_READ",
+      "domain": "firewall",
+      "operation": "read",
+      "risk": "low",
+      "confirmationRequired": false
+    },
+    {
+      "id": "NETWORK_WRITE",
+      "domain": "network",
+      "operation": "write",
+      "risk": "high",
+      "confirmationRequired": true
+    },
+    {
+      "id": "FIREWALL_WRITE",
+      "domain": "firewall",
+      "operation": "write",
+      "risk": "critical",
+      "confirmationRequired": true
+    }
+  ]
+}
